@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @GetMapping("/get")
-    public void test() {
+    public String test() {
         System.out.println("访问成功");
+        return "访问成功!";
     }
+
 }
